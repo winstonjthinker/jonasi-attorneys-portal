@@ -4,8 +4,13 @@ import { TeamMember, PracticeArea, CompanyInfo, NavItem, Testimonial } from '@/t
 export const companyInfo: CompanyInfo = {
   name: 'Jonasi Attorneys',
   tagline: 'Premier Legal Services in Zimbabwe',
-  email: 'info@jonasiattorneys.co.zw',
-  phone: '+263 242 123 456',
+  email: 'admin@jonasiattorneys.co.zw',
+  phone: '+263 242 747 052',
+  phones: {
+    landline: '+263 242 747 052',
+    econet: '+263 789 090 426',
+    netone: '+263 718 382 368',
+  },
   address: '123 Samora Machel Avenue, Harare, Zimbabwe',
   hours: 'Monday - Friday: 8:00 AM - 5:00 PM',
   social: {

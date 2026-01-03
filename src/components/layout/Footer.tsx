@@ -102,27 +102,37 @@ export const Footer: React.FC = () => {
           {/* Contact Info */}
           <div>
             <h4 className="font-serif text-lg font-semibold mb-6">Contact Us</h4>
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                 <span className="text-sm text-primary-foreground/70">
                   {companyInfo.address}
                 </span>
               </li>
+              {companyInfo.phones && (
+                <>
+                  <li>
+                    <a href={`tel:${companyInfo.phones.landline.replace(/\s/g, '')}`} className="flex items-center gap-3 text-sm text-primary-foreground/70 hover:text-accent transition-colors">
+                      <Phone className="w-5 h-5 text-accent flex-shrink-0" />
+                      <span>{companyInfo.phones.landline} (Landline)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={`tel:${companyInfo.phones.econet.replace(/\s/g, '')}`} className="flex items-center gap-3 text-sm text-primary-foreground/70 hover:text-accent transition-colors">
+                      <Phone className="w-5 h-5 text-accent flex-shrink-0" />
+                      <span>{companyInfo.phones.econet} (Econet)</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href={`tel:${companyInfo.phones.netone.replace(/\s/g, '')}`} className="flex items-center gap-3 text-sm text-primary-foreground/70 hover:text-accent transition-colors">
+                      <Phone className="w-5 h-5 text-accent flex-shrink-0" />
+                      <span>{companyInfo.phones.netone} (Netone)</span>
+                    </a>
+                  </li>
+                </>
+              )}
               <li>
-                <a
-                  href={`tel:${companyInfo.phone}`}
-                  className="flex items-center gap-3 text-sm text-primary-foreground/70 hover:text-accent transition-colors"
-                >
-                  <Phone className="w-5 h-5 text-accent flex-shrink-0" />
-                  <span>{companyInfo.phone}</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`mailto:${companyInfo.email}`}
-                  className="flex items-center gap-3 text-sm text-primary-foreground/70 hover:text-accent transition-colors"
-                >
+                <a href={`mailto:${companyInfo.email}`} className="flex items-center gap-3 text-sm text-primary-foreground/70 hover:text-accent transition-colors">
                   <Mail className="w-5 h-5 text-accent flex-shrink-0" />
                   <span>{companyInfo.email}</span>
                 </a>

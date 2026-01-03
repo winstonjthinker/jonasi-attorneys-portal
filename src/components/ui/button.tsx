@@ -22,16 +22,16 @@ const buttonVariants = cva(
         link:
           "text-primary underline-offset-4 hover:underline",
         // Custom Jonasi Attorneys variants
-        gold:
-          "bg-accent text-accent-foreground hover:bg-gold-light font-semibold shadow-medium hover:shadow-strong rounded-sm",
-        goldOutline:
+        accent:
+          "bg-accent text-accent-foreground hover:bg-brown-dark font-semibold shadow-medium hover:shadow-strong rounded-sm",
+        accentOutline:
           "border-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground font-semibold rounded-sm",
-        navy:
-          "bg-primary text-primary-foreground hover:bg-navy-light font-semibold shadow-medium hover:shadow-strong rounded-sm",
-        navyOutline:
+        dark:
+          "bg-primary text-primary-foreground hover:bg-primary/80 font-semibold shadow-medium hover:shadow-strong rounded-sm",
+        darkOutline:
           "border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-semibold rounded-sm",
         hero:
-          "bg-accent text-accent-foreground hover:bg-gold-light font-semibold text-base shadow-strong hover:shadow-lg transform hover:-translate-y-0.5 rounded-sm",
+          "bg-accent text-accent-foreground hover:bg-brown-dark font-semibold text-base shadow-strong hover:shadow-lg transform hover:-translate-y-0.5 rounded-sm",
         heroOutline:
           "border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-semibold text-base rounded-sm",
         subtle:

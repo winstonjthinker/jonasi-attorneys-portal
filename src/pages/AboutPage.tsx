@@ -110,7 +110,7 @@ const AboutPage: React.FC = () => {
       </SectionWrapper>
 
       {/* Values Section */}
-      <SectionWrapper background="navy">
+      <SectionWrapper background="dark">
         <SectionHeader
           subtitle="Our Values"
           title="What Guides Us"

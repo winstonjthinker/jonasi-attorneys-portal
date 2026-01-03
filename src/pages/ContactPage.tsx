@@ -60,10 +60,17 @@ const ContactPage: React.FC = () => {
               <div className="w-12 h-12 rounded-sm bg-accent/10 flex items-center justify-center"><MapPin className="w-5 h-5 text-accent" /></div>
               <div><h3 className="font-semibold mb-1">Office Address</h3><p className="text-sm text-muted-foreground">{companyInfo.address}</p></div>
             </div>
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-sm bg-accent/10 flex items-center justify-center"><Phone className="w-5 h-5 text-accent" /></div>
-              <div><h3 className="font-semibold mb-1">Phone</h3><a href={`tel:${companyInfo.phone}`} className="text-sm text-muted-foreground hover:text-accent">{companyInfo.phone}</a></div>
-            </div>
+            {companyInfo.phones && (
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-sm bg-accent/10 flex items-center justify-center"><Phone className="w-5 h-5 text-accent" /></div>
+                <div>
+                  <h3 className="font-semibold mb-1">Phone Numbers</h3>
+                  <a href={`tel:${companyInfo.phones.landline.replace(/\s/g, '')}`} className="block text-sm text-muted-foreground hover:text-accent">{companyInfo.phones.landline} (Landline)</a>
+                  <a href={`tel:${companyInfo.phones.econet.replace(/\s/g, '')}`} className="block text-sm text-muted-foreground hover:text-accent">{companyInfo.phones.econet} (Econet)</a>
+                  <a href={`tel:${companyInfo.phones.netone.replace(/\s/g, '')}`} className="block text-sm text-muted-foreground hover:text-accent">{companyInfo.phones.netone} (Netone)</a>
+                </div>
+              </div>
+            )}
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-sm bg-accent/10 flex items-center justify-center"><Mail className="w-5 h-5 text-accent" /></div>
               <div><h3 className="font-semibold mb-1">Email</h3><a href={`mailto:${companyInfo.email}`} className="text-sm text-muted-foreground hover:text-accent">{companyInfo.email}</a></div>
@@ -120,7 +127,7 @@ const ContactPage: React.FC = () => {
                     <label className="block text-sm font-medium mb-2">Message *</label>
                     <Textarea placeholder="Please describe your legal matter..." rows={5} value={formData.message} onChange={(e) => handleChange('message', e.target.value)} required />
                   </div>
-                  <Button type="submit" variant="gold" size="lg" disabled={isSubmitting}>
+                  <Button type="submit" variant="accent" size="lg" disabled={isSubmitting}>
                     {isSubmitting ? 'Sending...' : (<>Send Message <Send className="w-4 h-4" /></>)}
                   </Button>
                   <p className="text-xs text-muted-foreground">By submitting this form, you agree to our privacy policy.</p>

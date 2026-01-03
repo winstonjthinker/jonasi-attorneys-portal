@@ -73,7 +73,7 @@ export const AboutPreviewSection: React.FC = () => {
             ))}
           </ul>
 
-          <Button variant="gold" asChild>
+          <Button variant="accent" asChild>
             <Link to="/about">
               Learn More About Us
               <ArrowRight className="w-4 h-4" />

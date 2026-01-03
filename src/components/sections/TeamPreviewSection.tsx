@@ -59,7 +59,7 @@ export const TeamPreviewSection: React.FC = () => {
       </div>
 
       <div className="text-center mt-12">
-        <Button variant="navyOutline" asChild>
+        <Button variant="darkOutline" asChild>
           <Link to="/team">
             Meet Our Full Team
             <ArrowRight className="w-4 h-4" />
