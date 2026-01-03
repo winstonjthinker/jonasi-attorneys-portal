@@ -33,7 +33,7 @@ export const NewsletterSection: React.FC = () => {
   };
 
   return (
-    <SectionWrapper background="cream" className="!py-16">
+    <SectionWrapper background="muted" className="!py-16">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="heading-section mb-4">Stay Updated</h2>
         <p className="text-body text-muted-foreground mb-8">
@@ -55,7 +55,7 @@ export const NewsletterSection: React.FC = () => {
               required
               className="flex-1 h-12 bg-background"
             />
-            <Button type="submit" variant="gold" size="lg" disabled={isLoading}>
+            <Button type="submit" variant="accent" size="lg" disabled={isLoading}>
               {isLoading ? (
                 'Subscribing...'
               ) : (

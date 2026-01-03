@@ -34,14 +34,15 @@ export const Header: React.FC = () => {
 
   return (
     <>
-      {/* Top Bar */}
       <div className="bg-primary text-primary-foreground py-2 hidden md:block">
         <div className="container-custom flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href={`tel:${companyInfo.phone}`} className="flex items-center gap-2 hover:text-accent transition-colors">
-              <Phone className="w-4 h-4" />
-              <span>{companyInfo.phone}</span>
-            </a>
+            {companyInfo.phones && (
+              <a href={`tel:${companyInfo.phones.landline.replace(/\s/g, '')}`} className="flex items-center gap-2 hover:text-accent transition-colors">
+                <Phone className="w-4 h-4" />
+                <span>{companyInfo.phones.landline}</span>
+              </a>
+            )}
             <a href={`mailto:${companyInfo.email}`} className="flex items-center gap-2 hover:text-accent transition-colors">
               <Mail className="w-4 h-4" />
               <span>{companyInfo.email}</span>
@@ -123,7 +124,7 @@ export const Header: React.FC = () => {
 
             {/* CTA Button */}
             <div className="hidden lg:block">
-              <Button variant="gold" asChild>
+              <Button variant="accent" asChild>
                 <Link to="/contact">Free Consultation</Link>
               </Button>
             </div>
@@ -172,7 +173,7 @@ export const Header: React.FC = () => {
                 </div>
               ))}
               <div className="pt-4">
-                <Button variant="gold" className="w-full" asChild>
+                <Button variant="accent" className="w-full" asChild>
                   <Link to="/contact">Free Consultation</Link>
                 </Button>
               </div>

@@ -5,7 +5,7 @@ import { companyValues } from '@/data/siteData';
 
 export const WhyChooseUsSection: React.FC = () => {
   return (
-    <SectionWrapper background="navy">
+    <SectionWrapper background="dark">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         {/* Content Side */}
         <div>

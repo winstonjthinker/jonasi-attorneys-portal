@@ -168,7 +168,7 @@ const BlogPage: React.FC = () => {
           
           <div className="flex flex-wrap gap-2">
             <Button
-              variant={selectedCategory === null ? 'gold' : 'subtle'}
+              variant={selectedCategory === null ? 'accent' : 'subtle'}
               size="sm"
               onClick={() => setSelectedCategory(null)}
             >
@@ -177,7 +177,7 @@ const BlogPage: React.FC = () => {
             {categories.map((category) => (
               <Button
                 key={category.slug}
-                variant={selectedCategory === category.slug ? 'gold' : 'subtle'}
+                variant={selectedCategory === category.slug ? 'accent' : 'subtle'}
                 size="sm"
                 onClick={() => setSelectedCategory(category.slug)}
               >

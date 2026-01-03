@@ -102,6 +102,11 @@ export interface CompanyInfo {
   tagline: string;
   email: string;
   phone: string;
+  phones?: {
+    landline: string;
+    econet: string;
+    netone: string;
+  };
   address: string;
   hours: string;
   social: {
