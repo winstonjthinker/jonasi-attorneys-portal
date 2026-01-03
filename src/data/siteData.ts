@@ -90,6 +90,30 @@ Chiedza brings a strong balance of technical legal expertise and commercial awar
       'Mediation & Alternative Dispute Resolution',
     ],
   },
+  {
+    id: 3,
+    slug: 'fadzai-matanga',
+    name: 'Fadzai K. B. Matanga',
+    title: 'Associate',
+    role: 'Associate | Labour & Employment Law | Litigation & Advocacy',
+    email: 'fmatanga@jonasiattorneys.co.zw',
+    image: '/media/team/fadzai-matanga.jpg',
+    bio: `Fadzai K. B. Matanga is an Associate at Jonasi Attorneys and a skilled legal practitioner with a strong focus on labour and employment law, complemented by extensive experience in court litigation and legal advocacy.
+
+She advises employers and employees on a wide range of labour matters, including employment contracts, workplace disputes, disciplinary proceedings, retrenchments, unfair dismissal claims, and compliance with Zimbabwean labour legislation. Fadzai regularly represents clients before the Labour Court and other courts, where she is recognised for her thorough preparation, clear advocacy, and practical approach to dispute resolution.
+
+In addition to her labour practice, she is actively involved in commercial and civil litigation, assisting clients through all stages of court proceedings, from pleadings and interlocutory applications to trials and appeals.
+
+Fadzai brings diligence, precision, and strong courtroom presence to her work, making her a dependable advocate for clients navigating employment disputes and litigation matters.`,
+    areasOfPractice: [
+      'Labour & Employment Law',
+      'Labour Court Litigation',
+      'Employment Advisory & Compliance',
+      'Disciplinary & Grievance Proceedings',
+      'Court Litigation & Advocacy',
+      'Civil & Commercial Disputes',
+    ],
+  },
 ];
 
 export const practiceAreas: PracticeArea[] = [

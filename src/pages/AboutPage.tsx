@@ -27,20 +27,23 @@ const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Mission Section */}
+      {/* About Section */}
       <SectionWrapper>
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <SectionHeader
-              subtitle="Our Mission"
-              title="Excellence in Legal Services"
+              subtitle="Who We Are"
+              title="A Full-Service Law Firm"
               align="left"
             />
             <p className="text-body text-muted-foreground mb-6">
-              Jonasi Attorneys is a premier full-service law firm in Zimbabwe, providing trusted corporate, commercial, litigation, conveyancing and mining law services to local, regional and international clients.
+              Jonasi Attorneys is a full-service law firm in Zimbabwe, providing strategic legal advice and representation to corporate entities, investors, institutions, and private clients across a wide range of practice areas.
             </p>
             <p className="text-body text-muted-foreground mb-6">
-              Our lawyers combine deep legal expertise with practical industry knowledge to advise businesses, investors, institutions and individuals operating in Zimbabwe and across Africa. Through a collaborative, client-focused approach, we deliver clear, strategic and results-driven legal solutions tailored to our clients' objectives.
+              We are known for our strong expertise in commercial and corporate litigation, mining law, corporate transactions, conveyancing, advisory and deal structuring, insurance law, labour and employment law, and regulatory compliance. Our lawyers combine technical legal excellence with practical, business-focused insight to deliver solutions that are commercially sound and legally robust.
+            </p>
+            <p className="text-body text-muted-foreground mb-6">
+              The firm is led by experienced practitioners with a proven track record before all levels of Zimbabwean courts, including the Magistrates' Court, High Court, Supreme Court, and Constitutional Court. We routinely act on complex and high-value matters involving mining projects, property developments, corporate restructurings, commercial disputes, employment matters, and cross-border transactions.
             </p>
             
             {/* Stats */}
@@ -59,42 +62,45 @@ const AboutPage: React.FC = () => {
           </div>
           <div className="relative">
             <ImagePlaceholder
-              src="/media/about-mission.jpg"
-              alt="Our Mission"
+              src="/media/about-office.jpg"
+              alt="Jonasi Attorneys Office"
               className="w-full h-[500px] rounded-sm"
             />
           </div>
         </div>
       </SectionWrapper>
 
-      {/* Vision Section */}
+      {/* Client Approach Section */}
       <SectionWrapper background="muted">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1">
             <ImagePlaceholder
-              src="/media/about-vision.jpg"
-              alt="Our Vision"
+              src="/media/about-team.jpg"
+              alt="Our Team"
               className="w-full h-[500px] rounded-sm"
             />
           </div>
           <div className="order-1 lg:order-2">
             <SectionHeader
-              subtitle="Our Vision"
-              title="Leading the Way in Legal Excellence"
+              subtitle="Our Approach"
+              title="Client-Centred Legal Services"
               align="left"
             />
             <p className="text-body text-muted-foreground mb-6">
-              Our vision is to be recognised as a leading Zimbabwe law firm, known for excellence in corporate legal services, commercial transactions, litigation, property and mining law.
+              At Jonasi Attorneys, we pride ourselves on a client-centred approach. We take the time to understand our clients' objectives, industries, and risk environments, enabling us to provide clear, practical, and timely legal advice.
+            </p>
+            <p className="text-body text-muted-foreground mb-6">
+              Our work is grounded in integrity, professionalism, and a commitment to delivering measurable value.
             </p>
             <p className="text-body text-muted-foreground mb-8">
-              We are committed to building a firm defined by:
+              With a collaborative team and a forward-looking mindset, Jonasi Attorneys is well positioned to support clients operating in Zimbabwe's evolving legal and commercial landscape, as well as those with regional and international interests.
             </p>
             <ul className="space-y-3">
               {[
-                'Superior legal expertise',
-                'Efficient and responsive client service',
-                'Strong commercial awareness',
-                'Innovation in legal service delivery',
+                'Strategic legal advice tailored to your objectives',
+                'Deep understanding of industry-specific challenges',
+                'Proven track record across all court levels',
+                'Commitment to integrity and professionalism',
               ].map((item, index) => (
                 <li key={index} className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
@@ -102,9 +108,6 @@ const AboutPage: React.FC = () => {
                 </li>
               ))}
             </ul>
-            <p className="text-body text-muted-foreground mt-6">
-              By investing in our people, systems and technology, we aim to set the benchmark for professional legal services in Zimbabwe and beyond.
-            </p>
           </div>
         </div>
       </SectionWrapper>
@@ -139,14 +142,14 @@ const AboutPage: React.FC = () => {
         </div>
       </SectionWrapper>
 
-      {/* Leadership Preview */}
+      {/* Team Preview */}
       <SectionWrapper>
         <SectionHeader
-          subtitle="Leadership"
-          title="Meet Our Partners"
-          description="Our leadership team brings decades of experience and a shared commitment to client success."
+          subtitle="Our Team"
+          title="Meet Our Legal Experts"
+          description="Our team brings decades of experience and a shared commitment to client success."
         />
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {teamMembers.map((member) => (
             <Link
               key={member.id}
@@ -159,7 +162,7 @@ const AboutPage: React.FC = () => {
                 className="w-full h-64"
               />
               <div className="p-6">
-                <h3 className="heading-card mb-1">{member.name}</h3>
+                <h3 className="heading-card text-lg mb-1">{member.name}</h3>
                 <p className="text-accent font-medium text-sm">{member.title}</p>
               </div>
             </Link>
