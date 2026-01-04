@@ -27,7 +27,7 @@ export const HeroSection: React.FC = () => {
           </span>
           
           <h1 className="heading-display text-primary-foreground mb-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            Trusted Legal Excellence for Over 15 Years
+            Trusted Legal Excellence Built on Experience
           </h1>
           
           <p className="text-lg text-primary-foreground/80 leading-relaxed mb-8 max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
