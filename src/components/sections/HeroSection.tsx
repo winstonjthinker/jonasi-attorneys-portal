@@ -31,9 +31,8 @@ export const HeroSection: React.FC = () => {
           </h1>
           
           <p className="text-lg text-primary-foreground/80 leading-relaxed mb-8 max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            Jonasi Attorneys provides comprehensive legal services across corporate law, commercial litigation, mining law, and conveyancing. Our team of experienced practitioners delivers strategic, results-driven solutions tailored to your objectives.
+            Jonasi Attorneys offers a broad range of legal services, to corporate entities, investors, institutions, and private clients. in Zimbabwe and beyond.
           </p>
-          
           <div className="flex flex-wrap gap-4 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
             <Button variant="hero" size="lg" asChild>
               <Link to="/contact">
