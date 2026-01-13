@@ -46,7 +46,7 @@ export const ContactCtaSection: React.FC = () => {
           </div>
 
           <p className="text-sm text-primary-foreground/60">
-            Free initial consultation • Confidential • No obligation
+            Initial consultation • Confidential • No obligation
           </p>
         </div>
       </div>

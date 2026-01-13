@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { navigation, companyInfo } from '@/data/siteData';
 import { ImagePlaceholder } from '@/components/common';
-
+ import logo from "../../media/logo.png";// Case-sensitive! Use uppercase .PNG
 export const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -69,7 +69,7 @@ export const Header: React.FC = () => {
             <Link to="/" className="flex items-center gap-3">
               <div className="w-12 h-12">
                 <ImagePlaceholder
-                  src="/media/logo.png"
+                  src={logo}
                   alt="Jonasi Attorneys Logo"
                   className="w-full h-full"
                   showPath={false}
@@ -125,7 +125,7 @@ export const Header: React.FC = () => {
             {/* CTA Button */}
             <div className="hidden lg:block">
               <Button variant="accent" asChild>
-                <Link to="/contact">Free Consultation</Link>
+                <Link to="/contact">Schedule Consultation</Link>
               </Button>
             </div>
 
@@ -174,7 +174,7 @@ export const Header: React.FC = () => {
               ))}
               <div className="pt-4">
                 <Button variant="accent" className="w-full" asChild>
-                  <Link to="/contact">Free Consultation</Link>
+                  <Link to="/contact">Schedule Consultation</Link>
                 </Button>
               </div>
             </div>
